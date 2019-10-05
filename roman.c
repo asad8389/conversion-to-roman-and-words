@@ -9,7 +9,7 @@ void main()
 
     printf("enter year\n");
     scanf("%d",&year);
-    printf("\nroamn conversion of %d is ;\n\n",year);
+    printf("\nroman conversion of %d is ;\n\n",year);
     roman(year);
 
     leap(year);
