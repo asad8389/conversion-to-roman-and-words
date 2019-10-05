@@ -100,13 +100,17 @@ void word(int year)
             printf("thirty");
         if(a==4)
             printf("forty");
-            if(a==5)
+        if(a==5)
             printf("fifty");
+        if(a==6)
+            printf("sixty");
+        if(a==7)
+            printf("seventy");
+        if(a==8)
+            printf("eighty");
+        if(a==9)
+            printf("ninety");
 
-    }
-    else{
-        num(a);
-        printf("ty");
     }
     year%=10;
 
@@ -120,18 +124,18 @@ int num(int x)
         printf("one ");
     if(x==2)
         printf("two ");
-        if(x==3)
+    if(x==3)
         printf("three ");
-        if(x==4)
+    if(x==4)
         printf("four ");
-        if(x==5)
+    if(x==5)
         printf("five ");
-        if(x==6)
+    if(x==6)
         printf("six ");
-        if(x==7)
+    if(x==7)
         printf("seven ");
-        if(x==8)
+    if(x==8)
         printf("eight ");
-        if(x==9)
+    if(x==9)
         printf("nine ");
 }
