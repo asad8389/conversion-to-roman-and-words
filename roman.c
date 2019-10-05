@@ -9,11 +9,12 @@ void main()
 
     printf("enter year\n");
     scanf("%d",&year);
-    printf("roamn conversion of %d is ;\n\n",year);
+    printf("\nroamn conversion of %d is ;\n\n",year);
     roman(year);
 
     leap(year);
 
+    printf(" %d in words ;\n\n",year);
     word(year);
 
 
@@ -72,9 +73,9 @@ void roman(int year)
 int leap(int year)
 {
   if(year%4==0)
-    printf("\n\nleap year\n");
+    printf("\n\nleap year\n\n");
   else
-    printf("\n\nnot a leapyear");
+    printf("\n\nnot a leapyear\n\n");
 }
 void word(int year)
 {
@@ -93,23 +94,23 @@ void word(int year)
     year%=100;
 
     a=year/10;
-    if(a<6){
+    {
         if(a==2)
-            printf("twenty");
+            printf("twenty ");
         if(a==3)
-            printf("thirty");
+            printf("thirty ");
         if(a==4)
-            printf("forty");
+            printf("forty ");
         if(a==5)
-            printf("fifty");
+            printf("fifty ");
         if(a==6)
-            printf("sixty");
+            printf("sixty ");
         if(a==7)
-            printf("seventy");
+            printf("seventy ");
         if(a==8)
-            printf("eighty");
+            printf("eighty ");
         if(a==9)
-            printf("ninety");
+            printf("ninety ");
 
     }
     year%=10;
